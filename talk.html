@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Find Someone</title>
+    <link rel="stylesheet" href="css/talk.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jQRangeSlider-min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header id="top-head">
+        <div class="inner">
+            <div id="mobile-head">
+                <a href="index.html"><h1 class="logo">Cancer Journey</h1></a>
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav id="global-nav">
+                <ul>
+                    <li><a href="findsomeone.html">Find Someone</a></li>
+                    <li><a class="active-button" href="talk.html">Talk</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="idea.html">Idea</a></li>
+                    <li><a href="service">Service</a></li>
+                </ul>
+                <div class="account_box">
+                    <a id="login" href="">Log in</a>
+                    <em>or</em>
+                    <a id="signup" href="">Sign up</a>
+                </div>
+                <div id="modal-content">
+                    <div id="modal-content-innar">
+                        <div class="switch-button">
+                            <input type="radio" name="switch" id="login-tab" value="1" checked="">
+                            <label for="login-tab">Login</label>
+                            <input type="radio" name="switch" id="signup-tab" value="0">
+                            <label for="signup-tab">Signup</label>
+                            <!--  http://weboook.blog22.fc2.com/blog-entry-379.html これ参照 -->
+                        </div>
+                        <div id="modal-main">
+                            <div id="login-modal">
+                                <ul>
+                                    <li>
+                                        <input name="user_name" type="text" placeholder="ユーザーネーム">
+                                    </li>
+                                    <li>
+                                        <input name="password" type="password" placeholder="パスワード">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="signup-modal">
+                                <ul>
+                                    <li>
+                                        <input name="user_name" type="text" placeholder="ユーザーネーム">
+                                    </li>
+                                    <li>
+                                        <input name="mail" type="text" placeholder="メールアドレス">
+                                    </li>
+                                    <li>
+                                        <input name="password" type="password" placeholder="パスワード">
+                                    </li>
+                                    <li>
+                                        <input type="submit" value="登録">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p id="modal-close" class="button-link">閉じる</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="main">
+        <div id="container">
+            <h1>Talk</h1>
+            <div id="search-topic">
+                <div class="search-box">
+                    <span>話題を選択:</span>
+                    <div class="select">
+                        <select name="slct" id="slct">
+                            <option>話題</option>
+                            <option value="1">大腸がん</option>
+                            <option value="2">腎細胞がん</option>
+                            <option value="3">胃がん</option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-box">
+                    <span>キーワードで探す:</span>
+                    <form class="form-wrapper cf">
+                        <input type="text" placeholder="キーワードを入力..." required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div id="search-result">
+                    <div class="switch white">
+
+                        <input type="radio" value="1" name="switch" id="switch-on" checked>
+                        <input type="radio" value="2" name="switch" id="switch-off">
+
+                        <label for="switch-off">話題順</label>
+                        <label for="switch-on">新着順</label>
+
+                        <span class="toggle"></span>
+
+                    </div>
+                    <!-- end switch -->
+                    <div id="popular-talk">
+                        <h1>話題順</h1>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Aさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『胃がんの闘病について。』</a>
+                                <p class="sample-letter">先日、病院で検査をした結果、「胃がん」と診断されました。今後どのように過ごしていけばいいか分かりません。同じがんを抱えている方のアドバイス、お願いいたします。</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Bさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『膵臓がんの夫にどんな食事を作ればいいですか？』</a>
+                                <p class="sample-letter">昨日、とうとう夫が「膵臓がん」を患いました。前から具合が悪そうだったので、「もしかしたら...」と思ってましたが。。。私は妻としてどんな食事をこれから作っていけばいいでしょうか？</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Cさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『膵臓がんの夫にどんな食事を作ればいいですか？』</a>
+                                <p class="sample-letter">昨日、とうとう夫が「膵臓がん」を患いました。前から具合が悪そうだったので、「もしかしたら...」と思ってましたが。。。私は妻としてどんな食事をこれから作っていけばいいでしょうか？</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Dさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『膵臓がんの夫にどんな食事を作ればいいですか？』</a>
+                                <p class="sample-letter">昨日、とうとう夫が「膵臓がん」を患いました。前から具合が悪そうだったので、「もしかしたら...」と思ってましたが。。。私は妻としてどんな食事をこれから作っていけばいいでしょうか？</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="recent-talk">
+                        <h1>新着順</h1>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Eさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『たらこ』</a>
+                                <p class="sample-letter">たらこ、たらこ、たっぷりたらこ。</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Fさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『雪国』</a>
+                                <p class="sample-letter">トンネルを抜けると、そこは雪国もやしだった。</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Gさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『犬』</a>
+                                <p class="sample-letter">ワンだふる</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="icon-and-name">
+                                <img src="img/sample_icon.png" alt="">
+                                <p>Hさん</p>
+                            </div>
+                            <div class="talk-content">
+                                <a class="title" href="">『写真』</a>
+                                <p class="sample-letter">僕らの使っているiPhoneは、10年20年経ったら段々と価値が低下していく。それに対して、いくら時間が経っても価値が低下しないものはなんだろうか。そう、それは『思い出』である。一瞬瞬過ぎ行く時間を思い出として切り取る。それが写真というものだ。</p>
+                                <p class="date">2017/02/25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="signup_box">
+                <a href="" target="_top">
+                    <img src="img/facebook.png" alt="">
+                </a>
+                <div id="create_account">
+                    <p>メールアドレスで登録:</p>
+                    <ul>
+                        <li>
+                            <input name="user_name" type="text" placeholder="ユーザーネーム">
+                        </li>
+                        <li>
+                            <input name="mail" type="text" placeholder="メールアドレス">
+                        </li>
+                        <li>
+                            <input name="password" type="password" placeholder="パスワード">
+                        </li>
+                        <li>
+                            <input type="submit" value="登録">
+                        </li>
+                    </ul>
+                </div>
+                <div id="login_form">
+                    <p>すでにアカウントをお持ちの方:</p>
+                    <a href="">ログイン</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer id="top-foot">
+        <div class="link-list">
+            <ul>
+                <li><a href="">ログイン</a></li>
+                <li><a href="">アカウント登録</a></li>
+                <li><a href="">ユーザーを探す</a></li>
+                <li><a href="">話し合う</a></li>
+                <li><a href="">調べる</a></li>
+                <li><a href="">アイディア募集</a></li>
+                <li><a href="">旅行に行く</a></li>
+                <li><a href="">Cancer Journeyとは</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">利用規約</a></li>
+                <li><a href="">ヘルプ</a></li>
+            </ul>
+        </div>
+        <p class="credit">Copy Right ©Cancer Journey All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

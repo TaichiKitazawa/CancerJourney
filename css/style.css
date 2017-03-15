@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Hiragino';
+    src: url(font/ヒラギノ角ゴシック W0.ttc) format('truetype');
+}
+
+@font-face {
+    font-family: "Hiragino Sans";
+    src: local(HiraginoSans-W0);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Ultra Light';
+    src: local(HelveticaNeue-UltraLight);
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Lobster';
+    src: url(../font/Lobster1.4.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue Ultra Light', 'Hiragino Sans';
+}
+
+html,
+body {
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+.inner {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.inner:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* header */
+
+#top-head {
+    background-color: #69a2db;
+    top: -100px;
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    margin: 100px auto 0;
+    padding: 0px 0 0;
+    z-index: 999;
+}
+
+#top-head a,
+#top-head {
+    color: #fff;
+    text-decoration: none;
+    line-height: 55px;
+}
+
+#top-head .inner {
+    position: relative;
+}
+
+.logo {
+    font-family: 'lobster';
+    float: left;
+    font-size: 30px;
+}
+
+#global-nav {
+    overflow: hidden;
+    float: left;
+}
+
+#global-nav ul {
+    list-style: none;
+    position: absolute;
+    left: 250px;
+    bottom: 0;
+    font-size: 20px;
+}
+
+#global-nav ul li {
+    float: left;
+}
+
+#global-nav ul li a {
+    padding: 0 20px;
+}
+
+#global-nav > ul > li > a:hover {
+    border-bottom: #fafafa solid 1px;
+}
+
+.account_box {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    float: left;
+}
+
+#login, #signup{
+    font-weight: bold;
+}
+
+em{
+    padding: 0 20px;
+}
+
+
+/* Fixed */
+
+#top-head.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    height: 55px;
+    background: rgba(255, 99, 71, .7);
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+
+#top-head.fixed .logo {
+    color: #fff;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+#top-head.fixed #global-nav ul li a {
+    color: #fff;
+    padding: 0 20px;
+    background-color: none;
+    line-height: 55px;
+}
+
+
+/* Toggle Button */
+
+#nav-toggle {
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+#nav-toggle div {
+    position: relative;
+}
+
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+
+/* main */
+
+#main {
+    width: 100%;
+    height: 80%;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.inside-box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.inside-box h1{
+    font-family: 'lobster';
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.describe{
+    width: 100%;
+    
+}
+
+/* main */
+
+
+/* footer*/
+
+#top-foot {
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+}
+
+.link-list{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0 30px;
+    line-height: 10px;
+}
+
+.link-list > ul{
+    width: 100%;
+    list-style-type: none;
+}
+
+.link-list > ul > li{
+    float: left;
+    margin-right: 20px;
+}
+
+.link-list > ul > li > a{
+    font-weight: bold;
+    text-decoration: none;
+    color: darkblue;
+}
+
+.credit{
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+
+/* footer*/

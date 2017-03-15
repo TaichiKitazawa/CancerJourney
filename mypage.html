@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Find Someone</title>
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jQRangeSlider-min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header id="top-head">
+        <div class="inner">
+            <div id="mobile-head">
+                <a href="index.html"><h1 class="logo">Cancer Journey</h1></a>
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav id="global-nav">
+                <ul>
+                    <li><a class="active-button" href="findsomeone.html">Find Someone</a></li>
+                    <li><a href="talk.html">Talk</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="idea.html">Idea</a></li>
+                    <li><a href="service">Service</a></li>
+                </ul>
+                <div class="account_box">
+                    <a id="login" href="">Log in</a>
+                    <em>or</em>
+                    <a id="signup" href="">Sign up</a>
+                    <div id="modal-content">
+                        <div id="modal-content-innar">
+                            <ul>
+                                <li id="login-tab">Log in</li>
+                                <li id="signup-tab">Sign up</li>
+                            </ul>
+                            <div id="login-modal">
+                                <ul>
+                                    <li>
+                                        <input name="user_name" type="text" placeholder="ユーザーネーム">
+                                    </li>
+                                    <li>
+                                        <input name="password" type="password" placeholder="パスワード">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="signup-modal">
+                                <ul>
+                                    <li>
+                                        <input name="user_name" type="text" placeholder="ユーザーネーム">
+                                    </li>
+                                    <li>
+                                        <input name="mail" type="text" placeholder="メールアドレス">
+                                    </li>
+                                    <li>
+                                        <input name="password" type="password" placeholder="パスワード">
+                                    </li>
+                                    <li>
+                                        <input type="submit" value="登録">
+                                    </li>
+                                </ul>
+                            </div>
+                            <p id="modal-close" class="button-link">閉じる</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="container">
+            <h1>My Page</h1>
+            <div id="profile-top">
+                <div id="blur"></div>
+                <div id="filter">
+                    <img src="img/13584843_853446848120974_4897931407915144558_o.jpg" alt="">
+                    <h2>北澤太地</h2>
+                </div>
+            </div>
+            <div id="status">
+               <div id="textarea">
+                   <br><br>
+                <p>年齢: 40</p><br><br>
+                <p>性別: 男性</p><br><br>
+                <p>がんの種類: 大腸がん</p><br><br>
+                <p>地域: 東京</p><br><br>
+                <p>登録日: 2017年3月26日</p>
+               </div>
+            </div>
+            <div id="columns">
+                <div class="column">
+                    <h2>「これはサンプルタイトルです」</h2>
+                    <p class="date">2017年3月26日17:00</p>
+                    <p class="column-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, cum. Praesentium impedit ab est harum, quisquam nesciunt labore beatae alias doloribus voluptatum facilis dolore quia iure enim fuga consequuntur vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptate facilis consequuntur officiis fugiat, esse et, ipsum laboriosam quos cupiditate suscipit porro aliquid quis quisquam velit? Maxime, vel nam ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur beatae, voluptatibus, eveniet excepturi, nam illum assumenda nisi eligendi delectus numquam repellendus praesentium odio alias! Debitis amet tempore beatae ex. Nemo!</p>
+                    <p class="like">いいね: 20</p><p class="comment">コメント: 3件</p>
+                </div>
+                <div class="column">
+                    <h2>「これはサンプルタイトルです」</h2>
+                    <p class="date">2017年3月26日17:00</p>
+                    <p class="column-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, cum. Praesentium impedit ab est harum, quisquam nesciunt labore beatae alias doloribus voluptatum facilis dolore quia iure enim fuga consequuntur vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptate facilis consequuntur officiis fugiat, esse et, ipsum laboriosam quos cupiditate suscipit porro aliquid quis quisquam velit? Maxime, vel nam ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur beatae, voluptatibus, eveniet excepturi, nam illum assumenda nisi eligendi delectus numquam repellendus praesentium odio alias! Debitis amet tempore beatae ex. Nemo!</p>
+                    <p class="like">いいね: 20</p><p class="comment">コメント: 3件</p>
+                </div>
+                <div class="column">
+                    <h2>「これはサンプルタイトルです」</h2>
+                    <p class="date">2017年3月26日17:00</p>
+                    <p class="column-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, cum. Praesentium impedit ab est harum, quisquam nesciunt labore beatae alias doloribus voluptatum facilis dolore quia iure enim fuga consequuntur vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptate facilis consequuntur officiis fugiat, esse et, ipsum laboriosam quos cupiditate suscipit porro aliquid quis quisquam velit? Maxime, vel nam ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur beatae, voluptatibus, eveniet excepturi, nam illum assumenda nisi eligendi delectus numquam repellendus praesentium odio alias! Debitis amet tempore beatae ex. Nemo!</p>
+                    <p class="like">いいね: 20</p><p class="comment">コメント: 3件</p>
+                </div>
+                <div class="column">
+                    <h2>「これはサンプルタイトルです」</h2>
+                    <p class="date">2017年3月26日17:00</p>
+                    <p class="column-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, cum. Praesentium impedit ab est harum, quisquam nesciunt labore beatae alias doloribus voluptatum facilis dolore quia iure enim fuga consequuntur vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae voluptate facilis consequuntur officiis fugiat, esse et, ipsum laboriosam quos cupiditate suscipit porro aliquid quis quisquam velit? Maxime, vel nam ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur beatae, voluptatibus, eveniet excepturi, nam illum assumenda nisi eligendi delectus numquam repellendus praesentium odio alias! Debitis amet tempore beatae ex. Nemo!</p>
+                    <p class="like">いいね: 20</p><p class="comment">コメント: 3件</p>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="signup_box">
+                <a href="" target="_top">
+                    <img src="img/facebook.png" alt="">
+                </a>
+                <div id="create_account">
+                    <p>メールアドレスで登録:</p>
+                    <ul>
+                        <li>
+                            <input name="user_name" type="text" placeholder="ユーザーネーム">
+                        </li>
+                        <li>
+                            <input name="mail" type="text" placeholder="メールアドレス">
+                        </li>
+                        <li>
+                            <input name="password" type="password" placeholder="パスワード">
+                        </li>
+                        <li>
+                            <input type="submit" value="登録">
+                        </li>
+                    </ul>
+                </div>
+                <div id="login_form">
+                    <p>すでにアカウントをお持ちの方:</p>
+                    <a href="">ログイン</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="top-foot">
+        <div class="link-list">
+            <ul>
+                <li><a href="">ログイン</a></li>
+                <li><a href="">アカウント登録</a></li>
+                <li><a href="">ユーザーを探す</a></li>
+                <li><a href="">話し合う</a></li>
+                <li><a href="">調べる</a></li>
+                <li><a href="">アイディア募集</a></li>
+                <li><a href="">旅行に行く</a></li>
+                <li><a href="">Cancer Journeyとは</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">利用規約</a></li>
+                <li><a href="">ヘルプ</a></li>
+            </ul>
+        </div>
+        <p class="credit">Copy Right ©Cancer Journey All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

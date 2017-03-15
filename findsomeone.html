@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Find Someone</title>
+    <link rel="stylesheet" href="css/findsomeone.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jQRangeSlider-min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header id="top-head">
+        <div class="inner">
+            <div id="mobile-head">
+                <a href="index.html"><h1 class="logo">Cancer Journey</h1></a>
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav id="global-nav">
+                <ul>
+                    <li><a class="active-button" href="findsomeone.html">Find Someone</a></li>
+                    <li><a href="talk.html">Talk</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="idea.html">Idea</a></li>
+                    <li><a href="service">Service</a></li>
+                </ul>
+                <div class="account_box">
+                    <a id="login" href="">Log in</a>
+                    <em>or</em>
+                    <a id="signup" href="">Sign up</a>
+                    <div id="modal-content">
+                        <div id="modal-content-innar">
+                            <ul>
+                                <li id="login-tab">Log in</li>
+                                <li id="signup-tab">Sign up</li>
+                            </ul>
+                            <div id="login-modal">
+                                <ul>
+                                    <li>
+                                        <input name="user_name" type="text" placeholder="ユーザーネーム">
+                                    </li>
+                                    <li>
+                                        <input name="password" type="password" placeholder="パスワード">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="signup-modal">
+                                <ul>
+                                    <li>
+                                        <input name="user_name" type="text" placeholder="ユーザーネーム">
+                                    </li>
+                                    <li>
+                                        <input name="mail" type="text" placeholder="メールアドレス">
+                                    </li>
+                                    <li>
+                                        <input name="password" type="password" placeholder="パスワード">
+                                    </li>
+                                    <li>
+                                        <input type="submit" value="登録">
+                                    </li>
+                                </ul>
+                            </div>
+                            <p id="modal-close" class="button-link">閉じる</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="container">
+            <h1>Find Someone</h1>
+            <div class="search_option">
+                <div class="select">
+                    <select name="slct" id="slct">
+                        <option>がんの種類</option>
+                        <option value="1">大腸がん</option>
+                        <option value="2">腎細胞がん</option>
+                        <option value="3">胃がん</option>
+                        <option value="4"></option>
+                        <option value="4"></option>
+                        <option value="4"></option>
+                    </select>
+                </div>
+            </div>
+            <div id="more_filters">
+                <span class="button">さらに条件を絞る</span>
+            </div>
+            <div class="more_height">
+                <div id="gender">
+                    <span>性別: </span>
+                    <input type="checkbox" name="male" value="男性">男性
+                    <input type="checkbox" name="female" value="女性">女性
+                </div>
+                <div id="age">
+                    <div id="slider"></div>
+                </div>
+                <div id="place">
+                    <div class="select">
+                        <select name="slct" id="slct">
+                            <option>居住地</option>
+                            <option value="1">北海道</option>
+                            <option value="2">青森</option>
+                            <option value="3">秋田</option>
+                            <option value="4">岩手</option>
+                            <option value="5">宮城</option>
+                            <option value="6">福島</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="result">
+                <div class="result_people">
+                    <img src="img/sample_icon.png" alt="">
+                    <div class="result_information">
+                        <div class="result_box">
+                            <span class="result_name">山田太郎さん</span>
+                        </div>
+                        <div class="result_box">
+                            <span>性別:</span>
+                            <span class="gender">男性</span>
+                        </div>
+                        <div class="result_box">
+                            <span>症状:</span>
+                            <span class="cancer_type">大腸がん</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="result_people">
+                    <img src="img/sample_icon.png" alt="">
+                    <div class="result_box">
+                        <span class="result_name">佐藤花子さん</span>
+                    </div>
+                    <div class="result_box">
+                        <span>性別:</span>
+                        <span class="gender">女性</span>
+                    </div>
+                    <div class="result_box">
+                        <span>症状:</span>
+                        <span class="cancer_type">乳がん</span>
+                    </div>
+                </div>
+                <div class="result_people">
+                    <img src="img/sample_icon.png" alt="">
+                    <div class="result_box">
+                        <span class="result_name">鈴木拓郎さん</span>
+                    </div>
+                    <div class="result_box">
+                        <span>性別:</span>
+                        <span class="gender">男性</span>
+                    </div>
+                    <div class="result_box">
+                        <span>症状:</span>
+                        <span class="cancer_type">膵臓がん</span>
+                    </div>
+                </div>
+                <div class="result_people">
+                    <img src="img/sample_icon.png" alt="">
+                    <div class="result_box">
+                        <span class="result_name">山本明子さん</span>
+                    </div>
+                    <div class="result_box">
+                        <span>性別:</span>
+                        <span class="gender">女性</span>
+                    </div>
+                    <div class="result_box">
+                        <span>症状:</span>
+                        <span class="cancer_type">胃がん</span>
+                    </div>
+                </div>
+                <div class="result_people">
+                    <img src="img/sample_icon.png" alt="">
+                    <div class="result_box">
+                        <span class="result_name">田中健太さん</span>
+                    </div>
+                    <div class="result_box">
+                        <span>性別:</span>
+                        <span class="gender">女性</span>
+                    </div>
+                    <div class="result_box">
+                        <span>症状:</span>
+                        <span class="cancer_type">肺がん</span>
+                    </div>
+                </div>
+                <div class="result_people">
+                    <img src="img/sample_icon.png" alt="">
+                    <div class="result_box">
+                        <span class="result_name">関根智子さん</span>
+                    </div>
+                    <div class="result_box">
+                        <span>性別:</span>
+                        <span class="gender">女性</span>
+                    </div>
+                    <div class="result_box">
+                        <span>症状:</span>
+                        <span class="cancer_type">肝細胞がん</span>
+                    </div>
+                </div>
+                <a id="load-more" href="">もっと見る</a>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="signup_box">
+                <a href="" target="_top">
+                    <img src="img/facebook.png" alt="">
+                </a>
+                <div id="create_account">
+                    <p>メールアドレスで登録:</p>
+                    <ul>
+                        <li>
+                            <input name="user_name" type="text" placeholder="ユーザーネーム">
+                        </li>
+                        <li>
+                            <input name="mail" type="text" placeholder="メールアドレス">
+                        </li>
+                        <li>
+                            <input name="password" type="password" placeholder="パスワード">
+                        </li>
+                        <li>
+                            <input type="submit" value="登録">
+                        </li>
+                    </ul>
+                </div>
+                <div id="login_form">
+                    <p>すでにアカウントをお持ちの方:</p>
+                    <a href="">ログイン</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="top-foot">
+        <div class="link-list">
+            <ul>
+                <li><a href="">ログイン</a></li>
+                <li><a href="">アカウント登録</a></li>
+                <li><a href="">ユーザーを探す</a></li>
+                <li><a href="">話し合う</a></li>
+                <li><a href="">調べる</a></li>
+                <li><a href="">アイディア募集</a></li>
+                <li><a href="">旅行に行く</a></li>
+                <li><a href="">Cancer Journeyとは</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">利用規約</a></li>
+                <li><a href="">ヘルプ</a></li>
+            </ul>
+        </div>
+        <p class="credit">Copy Right ©Cancer Journey All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
