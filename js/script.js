@@ -144,7 +144,7 @@ $(function () {
 
 //switch-button
 
-//timeline
+//timeline  src: http://codepen.io/daveknispel/pen/PzOPVo
 
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
