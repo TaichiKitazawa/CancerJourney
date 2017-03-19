@@ -262,15 +262,17 @@ em {
 
 #main {
     width: 100%;
-    height: 1400px;
+    height: auto;
     padding-top: 100px;
+    overflow: hidden;
 }
 
 #container {
     width: 75%;
-    height: 1000px;
+    height: auto;
     float: left;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 #container > h1 {
@@ -288,7 +290,7 @@ em {
 #blur {
     width: 100%;
     height: 300px;
-    background-image: url(../img/13584843_853446848120974_4897931407915144558_o.jpg);
+    background-image: url(../img/PAK160130240I9A6753_TP_V.jpg);
     -webkit-filter: blur(15px);
     background-size: 100% auto;
     background-position: center center;
@@ -834,7 +836,7 @@ li a span{
   opacity: 0;
   top: -50px;
     left: -60px;
-  width: 85px;
+  width: 100px;
   padding: 10px;
   border-radius: 2px;
   background: #196090;
