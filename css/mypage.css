@@ -100,8 +100,7 @@ body {
     border-bottom: #fafafa solid 1px;
 }
 
-.active-button {
-}
+.active-button {}
 
 .account_box {
     position: absolute;
@@ -110,7 +109,7 @@ body {
     float: left;
 }
 
-.account_box > img{
+.account_box > img {
     border-radius: 50%;
     margin-top: 12.5px;
     float: left;
@@ -385,244 +384,264 @@ em {
 }
 
 .cd-horizontal-timeline a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 .cd-horizontal-timeline {
-  opacity: 0;
-  margin: 2em auto;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+    opacity: 0;
+    margin: 2em auto;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
 }
+
 .cd-horizontal-timeline::before {
-  /* never visible - this is used in jQuery to check the current MQ */
-  content: 'mobile';
-  display: none;
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none;
 }
+
 .cd-horizontal-timeline.loaded {
-  /* show the timeline after events position has been set (using JavaScript) */
-  opacity: 1;
+    /* show the timeline after events position has been set (using JavaScript) */
+    opacity: 1;
 }
+
 .cd-horizontal-timeline .timeline {
-  position: relative;
-  height: 100px;
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
+    position: relative;
+    height: 100px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
 .cd-horizontal-timeline .events-wrapper {
-  position: relative;
-  height: 100%;
-  margin: 0 40px;
-  overflow: hidden;
+    position: relative;
+    height: 150px;
+    margin: 0 40px;
+    margin-top: -50px;
+    overflow: hidden;
 }
-.cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
-  /* these are used to create a shadow effect at the sides of the timeline */
-  content: '';
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  height: 100%;
-  width: 20px;
-}
+
+.cd-horizontal-timeline .events-wrapper::after,
 .cd-horizontal-timeline .events-wrapper::before {
-  left: 0;
-  background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+    /* these are used to create a shadow effect at the sides of the timeline */
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    height: 100%;
+    width: 20px;
 }
+
+.cd-horizontal-timeline .events-wrapper::before {
+    left: 0;
+    background-image: -webkit-linear-gradient( left, #f8f8f8, rgba(248, 248, 248, 0));
+    background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+}
+
 .cd-horizontal-timeline .events-wrapper::after {
-  right: 0;
-  background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+    right: 0;
+    background-image: -webkit-linear-gradient( right, #f8f8f8, rgba(248, 248, 248, 0));
+    background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
 }
+
 .cd-horizontal-timeline .events {
-  /* this is the grey line/timeline */
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 49px;
-  height: 2px;
-  /* width will be set using JavaScript */
-  background: #dfdfdf;
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  transition: transform 0.4s;
+    /* this is the grey line/timeline */
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 49px;
+    height: 2px;
+    /* width will be set using JavaScript */
+    background: #dfdfdf;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
 }
+
 .cd-horizontal-timeline .filling-line {
-  /* this is used to create the green line filling the timeline */
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #fd8204;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
+    /* this is used to create the green line filling the timeline */
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fd8204;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
 }
+
 .cd-horizontal-timeline .events a {
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  text-align: center;
-  font-size: 1.3rem;
-  padding-bottom: 15px;
-  color: #383838;
-  /* fix bug on Safari - text flickering while timeline translates */
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+    color: #383838;
+    /* fix bug on Safari - text flickering while timeline translates */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
 }
+
 .cd-horizontal-timeline .events a::after {
-  /* this is used to create the event spot */
-  content: '';
-  position: absolute;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: -5px;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  border: 2px solid #fd8204;
-  background-color: #f8f8f8;
-  -webkit-transition: background-color 0.3s, border-color 0.3s;
-  -moz-transition: background-color 0.3s, border-color 0.3s;
-  transition: background-color 0.3s, border-color 0.3s;
+    /* this is used to create the event spot */
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid #fd8204;
+    background-color: #f8f8f8;
+    -webkit-transition: background-color 0.3s, border-color 0.3s;
+    -moz-transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
 }
+
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #085796;
-  border-color: #085796;
+    background-color: #085796;
+    border-color: #085796;
 }
+
 .cd-horizontal-timeline .events a.selected {
-  pointer-events: none;
+    pointer-events: none;
 }
+
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #085796;
-  border-color: #085796;
+    background-color: #085796;
+    border-color: #085796;
 }
-.cd-timeline-navigation{
-list-style-type: none;
+
+.cd-timeline-navigation {
+    list-style-type: none;
 }
 
 @media only screen and (min-width: 1100px) {
-  .cd-horizontal-timeline {
-    margin: 6em auto;
-  }
-  .cd-horizontal-timeline::before {
-    /* never visible - this is used in jQuery to check the current MQ */
-    content: 'desktop';
-  }
+    .cd-horizontal-timeline {
+        margin: 6em auto;
+    }
+    .cd-horizontal-timeline::before {
+        /* never visible - this is used in jQuery to check the current MQ */
+        content: 'desktop';
+    }
 }
 
 .cd-timeline-navigation a {
-  /* these are the left/right arrows to navigate the timeline */
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 34px;
-  width: 34px;
-  border-radius: 50%;
-  border: 2px solid #dfdfdf;
-  color: #dfdfdf;
-  /* replace text with an icon */
-  overflow: hidden;
-  color: transparent;
-  text-indent: 100%;
-  white-space: nowrap;
-  -webkit-transition: border-color 0.3s;
-  -moz-transition: border-color 0.3s;
-  transition: border-color 0.3s;
+    /* these are the left/right arrows to navigate the timeline */
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: 2px solid #dfdfdf;
+    color: #dfdfdf;
+    /* replace text with an icon */
+    overflow: hidden;
+    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap;
+    -webkit-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    transition: border-color 0.3s;
 }
+
 .cd-timeline-navigation a:hover {
-  border: 2px solid #005695;
-  color: #005695;
+    border: 2px solid #005695;
+    color: #005695;
 }
 
 .cd-timeline-navigation a.prev::before {
-  content:  "\f053";
-  font-family: FontAwesome;
-  color: #ccc;
-  font-size: 1.4rem;
-  display: block;
-  position:absolute;
-  top: 8px;
-  left: -25px;
-  z-index: 10000;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+    content: "\f053";
+    font-family: FontAwesome;
+    color: #ccc;
+    font-size: 1.4rem;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -25px;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .cd-timeline-navigation a.next::before {
-  content:  "\f054";
-  font-family: FontAwesome;
-  font-size: 1.4rem;
-  display: block;
-  position:absolute;
-  top: 8px;
-  left: -24px;
-  z-index: 10000;
-  color: #ccc;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 1.4rem;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -24px;
+    z-index: 10000;
+    color: #ccc;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .cd-timeline-navigation a:hover:before {
-  color: #005695;
+    color: #005695;
 }
-
 
 .cd-timeline-navigation a.next {
-  right: 0;
+    right: 0;
 }
-
 
 .no-touch .cd-timeline-navigation a:hover {
-  border-color: #7b9d6f;
+    border-color: #7b9d6f;
 }
+
 .cd-timeline-navigation a.inactive {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
+
 .cd-timeline-navigation a.inactive::after {
-  background-position: 0 -16px;
+    background-position: 0 -16px;
 }
+
 .no-touch .cd-timeline-navigation a.inactive:hover {
-  border-color: #dfdfdf;
+    border-color: #dfdfdf;
 }
 
 .cd-horizontal-timeline .events-content {
-  position: relative;
-  width: 100%;
-  margin: 2em 0;
-  overflow: hidden;
-  -webkit-transition: height 0.4s;
-  -moz-transition: height 0.4s;
-  transition: height 0.4s;
+    position: relative;
+    width: 100%;
+    margin: 2em 0;
+    overflow: hidden;
+    -webkit-transition: height 0.4s;
+    -moz-transition: height 0.4s;
+    transition: height 0.4s;
 }
 
 .cd-timeline-navigation a:hover:before {
@@ -832,32 +851,35 @@ list-style-type: none;
         transform: translateX(0%);
     }
 }
-li a span{
-  position: absolute;
-  opacity: 0;
-  top: -50px;
-    left: -60px;
-  width: 100px;
-  padding: 10px;
-  border-radius: 2px;
-  background: #196090;
-  color: #fff;
-  font-size: 17px;
-  line-height: 1;
-  transition: .3s;
+
+li a span {
+    position: absolute;
+    opacity: 0;
+    top: -50px;
+    left: -70px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 2px;
+    background: #196090;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1;
+    transition: .3s;
 }
-li a span:after{
-  position: absolute;
-  top: 100%;
-  height: 0;
-  width: 0;
-  border: 6px solid transparent;
-  border-top: 6px solid #196090;
-  content: "";
+
+li a span:after {
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid #196090;
+    content: "";
 }
-li a:hover span{
-  opacity: 1;
-  top: -40px;
+
+li a:hover span {
+    opacity: 1;
+    top: -60px;
 }
 
 

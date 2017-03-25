@@ -284,6 +284,7 @@ em {
     width: 85%;
     height: auto;
     margin-left: 5%;
+    margin-bottom: 50px;
 }
 * {
    box-sizing: border-box;
